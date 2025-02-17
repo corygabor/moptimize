@@ -9,6 +9,7 @@ export interface PostMetadata {
   id: string;
   title: string;
   date: string;
+  content: string;
 }
 
 async function getSortedPostsData(): Promise<PostMetadata[]> {
@@ -24,6 +25,7 @@ async function getSortedPostsData(): Promise<PostMetadata[]> {
       return {
         id,
         ...(matterResult.data as { date: string; title: string }),
+        content: matterResult.content, // Ensure content is included
       };
     })
   );
@@ -54,19 +56,21 @@ export default async function BlogPage() {
         <Navbar />
         <section className="py-10">
           <div className="container mx-auto px-6">
-            <h1 className="text-3xl font-bold text-center text-white mb-8">Blog</h1>
+            <h1 className="text-4xl font-bold text-center text-white mb-8">Blog</h1>
             <div className="max-w-4xl mx-auto">
-              {allPostsData.map(({ id, date, title }) => (
+              {allPostsData.map(({ id, date, title, content }) => (
                 <div
                   key={id}
                   className="mb-8 p-6 backdrop-blur-sm bg-gray-800/60 rounded-lg border border-white/20 text-white"
                 >
                   <Link href={`/blog/${id}`}>
-                    <h2 className="text-xl font-semibold text-white mb-2">{title}</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
                   </Link>
-                  <p className="text-gray-400">{date}</p>
-                  <article className="prose prose-invert max-w-4xl">
-                    {/* Ensure the blog post content is styled correctly */}
+                  <p className="text-gray-400 text-sm mb-6">{date}</p>
+                  
+                  {/* Ensure Markdown content is styled properly */}
+                  <article className="prose prose-invert max-w-3xl">
+                    {content}
                   </article>
                 </div>
               ))}
