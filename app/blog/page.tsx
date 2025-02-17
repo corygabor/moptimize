@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import { promises as fs } from "fs";
 import path from "path";
 import matter from "gray-matter";
+import ReactMarkdown from "react-markdown"; // ✅ Import Markdown Renderer
 
 export interface PostMetadata {
   id: string;
@@ -25,12 +26,11 @@ async function getSortedPostsData(): Promise<PostMetadata[]> {
       return {
         id,
         ...(matterResult.data as { date: string; title: string }),
-        content: matterResult.content, // Ensure content is included
+        content: matterResult.content, // ✅ Ensure Markdown content is included
       };
     })
   );
 
-  // Filter out the "Hello World" post and sort the remaining posts
   return allPostsData
     .filter((post) => post.id !== "hello-world")
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -50,34 +50,4 @@ export default async function BlogPage() {
           particleDensity={100}
           className="w-full h-full"
           particleColor="#8A7FFF"
-        />
-      </div>
-      <div className="relative z-10">
-        <Navbar />
-        <section className="py-10">
-          <div className="container mx-auto px-6">
-            <h1 className="text-4xl font-bold text-center text-white mb-8">Blog</h1>
-            <div className="max-w-4xl mx-auto">
-              {allPostsData.map(({ id, date, title, content }) => (
-                <div
-                  key={id}
-                  className="mb-8 p-6 backdrop-blur-sm bg-gray-800/60 rounded-lg border border-white/20 text-white"
-                >
-                  <Link href={`/blog/${id}`}>
-                    <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
-                  </Link>
-                  <p className="text-gray-400 text-sm mb-6">{date}</p>
-                  
-                  {/* Ensure Markdown content is styled properly */}
-                  <article className="prose prose-invert max-w-3xl">
-                    {content}
-                  </article>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  );
-}
+       
