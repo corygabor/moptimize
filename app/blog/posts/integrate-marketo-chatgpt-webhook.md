@@ -4,7 +4,7 @@ date: '2023-10-30'
 author: 'Cory Gabor'
 ---
 
-As many Marketing Ops veterans know, maximizing marketing impact can be achieved through a number of strategies. The methodology of focus in this blog is saving time on a key task for database management, segmentation, which can be as crucial as it is tedious. 
+As many Marketing Ops professionals know, maximizing marketing impact can be achieved through a number of strategies. The methodology of focus in this blog is saving time on a key task for database management, segmentation, which can be as crucial as it is tedious. 
 
 I recently built an integration between Adobe Marketo and OpenAI's ChatGPT. The goal? To streamline and refine lead segmentation process, moving beyond the limitations of traditional smart lists and smart campaigns with an extensive list of choice steps. Below, I will share the goals achieved, key outcomes, and a glimpse into how this integration was set up behind the scenes:
 
