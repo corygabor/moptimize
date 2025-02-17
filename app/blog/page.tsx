@@ -36,7 +36,7 @@ export default async function BlogPage() {
   const allPostsData = await getSortedPostsData()
 
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden text-white">
       <div className="absolute inset-0 z-0">
         <SparklesCore
           id="tsparticlesfullpage"
@@ -55,7 +55,7 @@ export default async function BlogPage() {
             <h1 className="text-3xl font-bold text-center text-white mb-8">Blog</h1>
             <div className="max-w-4xl mx-auto">
               {allPostsData.map(({ id, date, title }) => (
-                <div key={id} className="mb-8 p-6 backdrop-blur-sm bg-black/20 rounded-lg border border-white/10">
+                <div key={id} className="mb-8 p-6 backdrop-blur-sm bg-black/20 rounded-lg border border-white/10 text-white">
                   <Link href={`/blog/${id}`}>
                     <h2 className="text-xl font-semibold text-white mb-2">{title}</h2>
                   </Link>
@@ -69,4 +69,3 @@ export default async function BlogPage() {
     </main>
   )
 }
-
