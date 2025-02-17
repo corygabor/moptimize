@@ -38,4 +38,40 @@ export default async function BlogPage() {
 
   return (
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden text-white">
-      <div className="absolu
+      <div className="absolute inset-0 z-0">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#8A7FFF"
+        />
+      </div>
+      <div className="relative z-10">
+        <Navbar />
+        <section className="py-10">
+          <div className="container mx-auto px-6">
+            <h1 className="text-4xl font-bold text-center text-white mb-8">Blog</h1>
+            <div className="max-w-4xl mx-auto">
+              {allPostsData.map(({ id, date, title }) => (
+                <div
+                  key={id}
+                  className="mb-8 p-6 backdrop-blur-sm bg-gray-800/60 rounded-lg border border-white/20 text-white"
+                >
+                  <Link href={`/blog/${id}`}>
+                    <h2 className="text-2xl font-bold text-white mb-2 hover:text-purple-400 transition">
+                      {title}
+                    </h2>
+                  </Link>
+                  <p className="text-gray-400 text-sm">{date}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
