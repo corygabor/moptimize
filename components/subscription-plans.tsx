@@ -8,7 +8,7 @@ import Link from "next/link"
 const plans = [
   {
     name: "Small",
-    price: "$5,000",
+    price: "$6,000",
     features: [
       "All services included",
       "Up to 30 hours per month",
@@ -18,7 +18,7 @@ const plans = [
   },
   {
     name: "Medium",
-    price: "$8,000",
+    price: "$10,000",
     features: [
       "All services included",
       "Up to 50 hours per month",
@@ -28,7 +28,7 @@ const plans = [
   },
   {
     name: "Large",
-    price: "$12,000",
+    price: "$15,000",
     features: [
       "All services included",
       "Up to 80 hours per month",
