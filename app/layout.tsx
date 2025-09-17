@@ -1,12 +1,12 @@
-import type React from "react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { SparklesCore } from "@/components/sparkles";
-import Footer from "@/components/footer";
-import { Analytics } from "@vercel/analytics/react";
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import { Suspense } from "react" // Added Suspense import
+import "./globals.css"
+import { SparklesCore } from "@/components/sparkles"
+import Footer from "@/components/footer"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Moptimize - Marketing Operations as a Service",
@@ -20,12 +20,12 @@ export const metadata: Metadata = {
     ],
   },
   generator: "v0.dev",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -46,16 +46,15 @@ export default function RootLayout({
 
           {/* Main Content */}
           <div className="relative z-10 bg-grid-white/[0.02] flex-grow">
-            {children}
+            <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+              {children}
+            </Suspense>
           </div>
 
           {/* Footer */}
           <Footer />
         </div>
-
-        {/* Add Vercel Analytics here */}
-        <Analytics />
       </body>
     </html>
-  );
+  )
 }

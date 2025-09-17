@@ -27,18 +27,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
                 <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
                   Subscriptions
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  Blog
                 </Link>
               </li>
             </ul>
@@ -47,9 +37,21 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">Platform Operations</li>
-              <li className="text-gray-400">Campaign Operations</li>
-              <li className="text-gray-400">Marketing Analytics</li>
+              <li>
+                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  Foundation Setup
+                </Link>
+              </li>
+              <li>
+                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  GTM Operations
+                </Link>
+              </li>
+              <li>
+                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  AI-First Operations
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -77,4 +79,3 @@ export default function Footer() {
     </footer>
   )
 }
-

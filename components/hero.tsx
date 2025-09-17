@@ -1,8 +1,6 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export default function Hero() {
@@ -16,8 +14,8 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-4"
           >
-            <span className="inline-block bg-[#8A7FFF]/20 text-[#8A7FFF] text-sm font-medium py-1 px-3 rounded-full backdrop-blur-sm">
-              Marketing Operations as a Service
+            <span className="inline-block bg-[#8A7FFF] text-white text-sm font-medium py-1 px-3 rounded-full backdrop-blur-sm">
+              AI-Powered GTM Engineering
             </span>
           </motion.div>
 
@@ -27,10 +25,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              Marketing Ops,{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8A7FFF] to-[#B4ACFF]">
-                Optimized for Growth
-              </span>
+              GTM Systems, <span className="text-[#A5B4FC]">Optimized for Growth</span>
             </h1>
           </motion.div>
 
@@ -38,9 +33,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-gray-400 text-xl mb-8 max-w-2xl mx-auto"
+            className="text-gray-300 text-xl mb-8 max-w-2xl mx-auto"
           >
-            We streamline your tech, automate workflows, and drive data-backed decisions—so you can scale faster.
+            We streamline your GTM stack, automate workflows, and apply AI where it drives the most impact. The result
+            is faster execution, cleaner operations, and smarter growth.
           </motion.p>
 
           <motion.div
@@ -49,16 +45,16 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" className="bg-[#8A7FFF] hover:bg-[#7A6FEF] text-white px-8" asChild>
-              <Link href="/contact">
-                Let's Chat
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-11 px-8 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#8A7FFF] text-white hover:bg-[#7A6FEF]"
+            >
+              Work With Us
+              <span className="ml-2">→</span>
+            </Link>
           </motion.div>
         </div>
       </div>
     </div>
   )
 }
-

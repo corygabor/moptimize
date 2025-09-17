@@ -1,44 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { RefreshCw, ArrowUpRight, Zap, Smile, Users, Activity } from "lucide-react"
+import { Mountain as Foundation, Cog, Brain } from "lucide-react"
 
 const services = [
   {
-    title: "Optimize Your Tech Stack",
+    title: "Foundation Setup",
     description:
-      "Unlock the full potential of your marketing tools. We fine-tune your existing platforms for peak performance—no wasted spend, no inefficiencies.",
-    icon: RefreshCw,
+      "Get your marketing operations foundation right. We audit, clean up, and streamline your systems so campaigns run smoothly and scale with less effort.",
+    icon: Foundation,
   },
   {
-    title: "Scale Marketing Ops Without the Overhead",
+    title: "GTM Operations",
     description:
-      "Expand your capabilities, not your headcount. We streamline your marketing ops so you can scale smarter, faster, and with less friction.",
-    icon: ArrowUpRight,
+      "Automate the busywork across your go-to-market systems. We design workflows that route leads, trigger follow-ups, and keep campaigns moving with less manual effort.",
+    icon: Cog,
   },
   {
-    title: "Effortless Tool Implementation",
+    title: "AI-First Operations",
     description:
-      "New tech, no headaches. We integrate and configure your marketing platforms so you can focus on strategy, not setup.",
-    icon: Zap,
-  },
-  {
-    title: "Reduce Team Burnout with Automation",
-    description:
-      "Work smarter, not harder. Our automation solutions eliminate manual tasks, giving your team the freedom to focus on high-impact work.",
-    icon: Smile,
-  },
-  {
-    title: "Expert-Led Training & Support",
-    description:
-      "Get hands-on guidance from certified marketing ops experts. From office hours to custom training, we ensure your team is always equipped to execute.",
-    icon: Users,
-  },
-  {
-    title: "End-to-End Revenue Attribution",
-    description:
-      "Track, measure, and optimize every campaign with real-time insights. We give you full visibility into your funnel—from first touch to closed deal.",
-    icon: Activity,
+      "Stay ahead with AI-powered operations. We build practical AI into your GTM processes, from outbound and routing to campaign execution, so your team can scale faster.",
+    icon: Brain,
   },
 ]
 
@@ -73,4 +55,3 @@ export default function Services() {
     </section>
   )
 }
-

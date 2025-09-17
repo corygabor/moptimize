@@ -58,4 +58,3 @@ export function FloatingPaper({ count = 5 }) {
     </div>
   )
 }
-

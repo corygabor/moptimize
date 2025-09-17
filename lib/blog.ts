@@ -21,4 +21,3 @@ export async function getPostData(id: string, content: string): Promise<PostData
     ...(matterResult.data as { date: string; title: string }),
   }
 }
-

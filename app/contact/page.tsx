@@ -1,11 +1,6 @@
-import dynamic from "next/dynamic"
 import Navbar from "@/components/navbar"
 import { SparklesCore } from "@/components/sparkles"
-
-const Calendly = dynamic(() => import("@/components/calendly"), {
-  ssr: false,
-  loading: () => <p className="text-white text-center">Loading calendar...</p>,
-})
+import ContactForm from "./contact-form"
 
 export default function ContactPage() {
   return (
@@ -26,12 +21,12 @@ export default function ContactPage() {
         <section className="py-10">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-3xl font-bold text-center text-white mb-8">Schedule a Call</h1>
-              <div
-                className="backdrop-blur-sm bg-black/20 rounded-lg overflow-hidden border border-white/10"
-                style={{ height: "700px" }}
-              >
-                <Calendly />
+              <div className="text-center mb-8">
+                
+                
+              </div>
+              <div className="backdrop-blur-sm bg-black/20 rounded-lg overflow-hidden border border-white/10 p-6">
+                <ContactForm />
               </div>
             </div>
           </div>
@@ -40,4 +35,3 @@ export default function ContactPage() {
     </main>
   )
 }
-
