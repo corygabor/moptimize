@@ -1,30 +1,33 @@
-# moptimizemain
+# Moptimize
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+**AI-Powered GTM Engineering & Marketing Ops as a Service**
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/moptimizes-projects/v0-moptimizemain)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/91badKYL7yK)
+Moptimize helps SaaS and growth-stage companies streamline their go-to-market (GTM) systems. We automate workflows, optimize marketing operations, and apply AI where it makes the biggest impact — so your team can scale faster with less friction.
 
-## Overview
+🌐 [moptimize.agency](https://www.moptimize.agency)
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+---
 
-## Deployment
+## 🚀 What We Do
+- **GTM Systems** – build and optimize workflows across your marketing and sales stack  
+- **AI-Powered Automation** – eliminate manual busywork with smart, scalable processes  
+- **Platform Integration** – connect tools like Tray.ai, n8n, Zapier, Make, Clay, HubSpot, Marketo, Salesforce, LeanData, and more  
+- **Contact-to-Revenue Flow** – route leads, trigger follow-ups, and keep campaigns moving  
 
-Your project is live at:
+---
 
-**[https://vercel.com/moptimizes-projects/v0-moptimizemain](https://vercel.com/moptimizes-projects/v0-moptimizemain)**
+## 🛠️ Tech Stack
+- [Next.js](https://nextjs.org/) (App Router)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- [Vercel](https://vercel.com/) (hosting & deployment)  
+- [Neon](https://neon.tech/) (Postgres, serverless DB)  
+- Slack (webhook integration for contact form notifications)  
 
-## Build your app
+---
 
-Continue building your app on:
+## 📦 Getting Started (Local Dev)
 
-**[https://v0.app/chat/projects/91badKYL7yK](https://v0.app/chat/projects/91badKYL7yK)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/corygabor/moptimize.git
+   cd moptimize
