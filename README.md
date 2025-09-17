@@ -24,10 +24,18 @@ Moptimize helps SaaS and growth-stage companies streamline their go-to-market (G
 - Slack (webhook integration for contact form notifications)  
 
 ---
+📬 Contact Form
 
-## 📦 Getting Started (Local Dev)
+The contact form writes to Neon (if configured) and posts to Slack via webhook.
+If no database URL is provided, submissions will skip the DB insert but still notify Slack.
 
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/corygabor/moptimize.git
-   cd moptimize
+📄 License
+
+This repo is public for transparency, but all rights are reserved.
+For questions about usage or collaboration, contact us at moptimize.agency/contact
+.
+
+✨ About
+
+Moptimize is a GTM Engineering and Marketing Ops agency built for modern SaaS teams.
+We focus on automation, AI integration, and system design that drives measurable growth.
