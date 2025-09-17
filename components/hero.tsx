@@ -24,9 +24,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              GTM Systems, <span className="text-[#A5B4FC]">Optimized for Growth</span>
-            </h1>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+  <span className="block">GTM Systems,</span>
+  <span className="block text-[#A5B4FC]">Optimized for Growth</span>
+</h1>
           </motion.div>
 
           <motion.p
