@@ -5,6 +5,7 @@ import { Suspense } from "react" // Added Suspense import
 import "./globals.css"
 import { SparklesCore } from "@/components/sparkles"
 import Footer from "@/components/footer"
+import { Analytics } from "@vercel/analytics/react" // Added Vercel Analytics import
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -54,6 +55,7 @@ export default function RootLayout({
           {/* Footer */}
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   )
