@@ -146,7 +146,7 @@ export default function AgentPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            className="text-center mb-12 max-w-4xl mx-auto"
           >
             <h2 className="text-2xl font-semibold text-white">Example queries</h2>
           </motion.div>
@@ -189,14 +189,14 @@ export default function AgentPage() {
                 Built for marketing ops teams
               </h2>
               <p className="text-gray-400 mb-8">
-                Stop tab-switching between HubSpot and Salesforce. Get answers instantly, update records in seconds, and keep your stack in sync.
+                Stop tab-switching between your MAP and CRM. Get answers instantly and take action in seconds.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Natural language queries across both platforms",
-                  "Real-time data sync between MAP and CRM",
-                  "Bulk operations with simple commands",
-                  "Full audit trail of all actions",
+                  "Query your MAP and CRM with plain English",
+                  "Take action across platforms with a single prompt",
+                  "Bulk updates in seconds — no exports, no imports",
+                  "No SOQL, no complex filters — just ask",
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-300">
                     <Zap className="w-5 h-5 text-[#8A7FFF]" />
