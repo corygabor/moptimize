@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { ArrowRight, Zap, MessageSquare, RefreshCw, Shield } from "lucide-react"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 
 export default function AgentPage() {
   return (
@@ -258,8 +257,6 @@ export default function AgentPage() {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }
