@@ -151,7 +151,7 @@ export default function AgentPage() {
             <h2 className="text-2xl font-semibold text-white">Example queries</h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-4xl">
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
               "Show me all leads from last week's webinar",
               "Find HubSpot contacts not synced to Salesforce",
