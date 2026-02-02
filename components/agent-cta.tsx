@@ -30,7 +30,7 @@ export default function AgentCTA() {
               </h2>
 
               <p className="text-gray-400 text-lg mb-6 max-w-2xl">
-                AI-powered marketing operations for teams running HubSpot and Salesforce. Query, sync, and automate across both platforms with natural language.
+                AI-powered marketing operations for teams running a MAP and CRM. Query data and take action across both platforms with natural language.
               </p>
 
               <div className="flex items-center gap-6 mb-8">
@@ -51,7 +51,7 @@ export default function AgentCTA() {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <Button size="lg" className="bg-transparent border border-white/20 text-white hover:bg-white/10" asChild>
                   <Link href="/contact">
                     Request Access
                   </Link>
