@@ -42,6 +42,10 @@ export default function AgentCTA() {
                   <div className="w-2 h-2 bg-[#00A1E0] rounded" />
                   Salesforce
                 </div>
+                <div className="flex items-center gap-2 text-sm text-gray-400 opacity-50">
+                  <div className="w-2 h-2 bg-[#5C4C9F] rounded" />
+                  Marketo (Soon)
+                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">

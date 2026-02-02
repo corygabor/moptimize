@@ -38,12 +38,12 @@ const plans = [
     name: "AI-First",
     price: "$20,000",
     hours: "~80 hrs/month",
-    tagline: "Build the next generation of GTM with advanced AI integration.",
+    tagline: "Build the next generation of GTM with AI agents and custom tools.",
     features: [
-      "AI-driven outbound and campaign support",
-      "Conversational AI for inbound lead engagement and qualification",
-      "Custom internal apps to simplify campaign setup and execution",
-      "Automated campaign setup and monitoring",
+      "Custom AI agents for your team's specific workflows",
+      "Internal apps that simplify campaign setup and execution",
+      "AI-driven outbound and lead qualification",
+      "Moptimize Agent access for natural language MAP/CRM queries",
       "Training and enablement for your team",
     ],
     recommended: false,
@@ -66,14 +66,6 @@ const whyMoptimizeFeatures = [
     title: "Proven Impact",
     description: "Cleaner operations, faster campaigns, better results",
   },
-]
-
-const useCases = [
-  "Faster lead routing and enrichment",
-  "Automated outbound and campaign follow-up",
-  "Scheduling and handoff without manual effort",
-  "Simple apps that reduce campaign setup time",
-  "Cleaner data and stronger governance",
 ]
 
 export default function SubscriptionPlans() {
