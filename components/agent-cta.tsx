@@ -11,8 +11,8 @@ export default function AgentCTA() {
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
           <div className="relative overflow-hidden rounded-2xl border border-[#8A7FFF]/30 bg-gradient-to-br from-[#8A7FFF]/10 to-transparent p-8 md:p-12">
