@@ -37,9 +37,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                <a href="https://corygabor.com" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
                   Blog
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
@@ -53,18 +53,23 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  Foundation Setup
+                <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  AI Agents for MOps
                 </Link>
               </li>
               <li>
-                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  GTM Operations
+                <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  Platform Migrations
                 </Link>
               </li>
               <li>
-                <Link href="/subscriptions" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  AI-First Operations
+                <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  Data & Enrichment
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
+                  Campaign Automation
                 </Link>
               </li>
             </ul>

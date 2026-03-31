@@ -43,7 +43,7 @@ const plans = [
       "Custom AI agents for your team's specific workflows",
       "Internal apps that simplify campaign setup and execution",
       "AI-driven outbound and lead qualification",
-      "Moptimize Agent access for natural language MAP/CRM queries",
+      "Clay enrichment and data pipeline builds",
       "Training and enablement for your team",
     ],
     recommended: false,

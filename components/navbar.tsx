@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-8">
         <NavLink href="/services">Services</NavLink>
         <NavLink href="/subscriptions">Subscriptions</NavLink>
-        <NavLink href="/blog">Blog</NavLink>
+        <NavLink href="https://corygabor.com">Blog</NavLink>
       </div>
 
       <div className="hidden md:flex items-center space-x-4">
@@ -57,7 +57,7 @@ export default function Navbar() {
             <NavLink href="/subscriptions" onClick={toggleMenu}>
               Subscriptions
             </NavLink>
-            <NavLink href="/blog" onClick={toggleMenu}>
+            <NavLink href="https://corygabor.com" onClick={toggleMenu}>
               Blog
             </NavLink>
             <Button className="bg-[#8A7FFF] hover:bg-[#7A6FEF] text-white w-full" asChild>

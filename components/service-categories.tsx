@@ -1,49 +1,64 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Server, BarChart, LineChart } from "lucide-react"
+import { Bot, ArrowRightLeft, Database, Workflow } from "lucide-react"
 
 const services = [
   {
-    title: "Platform Operations",
-    icon: Server,
+    title: "AI Agents for MOps",
+    icon: Bot,
     description:
-      "Platform operations focuses on implementing, optimizing, and managing various marketing platforms and tools that drive your marketing strategies.",
+      "Custom AI agents that handle the repetitive work your team does every day — built to fit your specific stack and processes.",
     items: [
-      "Implementation & Migration",
-      "Marketing Automation Platform Audit",
-      "Lead Management",
-      "Tool Evaluation",
-      "User Management & Permission Sets",
-      "Troubleshooting & Quality Assurance",
-      "Sync Errors",
-      "Day-to-Day System Administration",
-      "Native Integrations",
-      "Data Normalization",
+      "Slack-based campaign ops agents",
+      "Automated list import with AI validation",
+      "Lead research and qualification agents",
+      "Auto-outbound sequence generation",
+      "Natural language querying across MAP + CRM",
+      "Custom agent builds for your team's workflows",
     ],
   },
   {
-    title: "Campaign Operations",
-    icon: BarChart,
+    title: "Platform Migrations",
+    icon: ArrowRightLeft,
     description:
-      "Campaign operations serves as the foundation of your marketing campaigns. It involves planning, execution, and monitoring to ensure campaigns align with your business objectives and deliver the desired results.",
+      "End-to-end MAP and CRM migrations — rebuilding nurtures, templates, routing, and integrations without losing momentum.",
     items: [
-      "Campaign Management",
-      "Nurture Strategy",
-      "UTMs & Tracking",
-      "Workflow Automation & Process Optimization",
-      "Campaign Execution & A/B Testing",
-      "Center of Excellence",
-      "Intake/Ticket Process",
-      "Segmentation & Targeting",
-      "Quality Assurance",
+      "MAP migrations (Marketo, HubSpot, Inflection, SFMC)",
+      "Nurture journey rebuilds",
+      "Email template migration and Knak implementation",
+      "Lead lifecycle and scoring framework setup",
+      "Salesforce Flows for lifecycle management",
+      "Integration and sync configuration",
     ],
   },
   {
-    title: "Marketing Analytics & Insights",
-    icon: LineChart,
-    description: "Marketing analytics provides insights into marketing campaign performance.",
-    items: ["In-platform reporting", "Salesforce (SFDC) reporting", "Attribution", "Quality Assurance"],
+    title: "Data & Enrichment Pipelines",
+    icon: Database,
+    description:
+      "Clean, enrich, and route your data so the right leads get to the right people with the right context.",
+    items: [
+      "Clay enrichment workflows",
+      "Lead routing and assignment logic",
+      "Data normalization and hygiene",
+      "Snowflake and warehouse integrations",
+      "Deduplication and merge strategies",
+      "Compliance-ready data governance",
+    ],
+  },
+  {
+    title: "Campaign Automation",
+    icon: Workflow,
+    description:
+      "Design and build the workflows, nurtures, and operational processes that keep campaigns running without manual intervention.",
+    items: [
+      "Nurture strategy and execution",
+      "Workflow automation across your GTM stack",
+      "Salesforce campaign management",
+      "UTM strategy and tracking",
+      "Segmentation and targeting",
+      "A/B testing frameworks",
+    ],
   },
 ]
 
@@ -61,7 +76,7 @@ export default function ServiceCategories() {
           <div className="w-24 h-1 bg-[#8A7FFF] mx-auto" />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

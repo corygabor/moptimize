@@ -1,26 +1,32 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mountain as Foundation, Cog, Brain } from "lucide-react"
+import { Bot, ArrowRightLeft, Database, Workflow } from "lucide-react"
 
 const services = [
   {
-    title: "Foundation Setup",
+    title: "AI Agents for MOps",
     description:
-      "Get your marketing operations foundation right. We audit, clean up, and streamline your systems so campaigns run smoothly and scale with less effort.",
-    icon: Foundation,
+      "Custom AI agents that automate list imports, lead research, outbound sequences, and campaign ops — built for your stack.",
+    icon: Bot,
   },
   {
-    title: "GTM Operations",
+    title: "Platform Migrations",
     description:
-      "Automate the busywork across your go-to-market systems. We design workflows that route leads, trigger follow-ups, and keep campaigns moving with less manual effort.",
-    icon: Cog,
+      "End-to-end MAP and CRM migrations. Nurtures, templates, routing, and integrations rebuilt without losing momentum.",
+    icon: ArrowRightLeft,
   },
   {
-    title: "AI-First Operations",
+    title: "Data & Enrichment",
     description:
-      "Stay ahead with AI-powered operations. We build practical AI into your GTM processes, from outbound and routing to campaign execution, so your team can scale faster.",
-    icon: Brain,
+      "Clay workflows, lead routing, data normalization, and warehouse integrations so the right leads reach the right people.",
+    icon: Database,
+  },
+  {
+    title: "Campaign Automation",
+    description:
+      "Workflows, nurtures, and operational processes that keep campaigns running across your GTM stack without manual intervention.",
+    icon: Workflow,
   },
 ]
 
@@ -36,7 +42,7 @@ export default function Services() {
         >
           Our Services
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
