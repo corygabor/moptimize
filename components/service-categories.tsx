@@ -28,7 +28,6 @@ const services = [
       "Nurture journey rebuilds",
       "Email template migration and Knak implementation",
       "Lead lifecycle and scoring framework setup",
-      "Salesforce Flows for lifecycle management",
       "Integration and sync configuration",
     ],
   },

@@ -37,11 +37,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://corygabor.com" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
                 <Link href="/contact" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
                   Contact
                 </Link>
