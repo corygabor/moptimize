@@ -27,7 +27,7 @@ const plans = [
     tagline: "Enrichment pipelines, advanced routing, and workflow automation.",
     features: [
       "Everything in Foundation",
-      "Clay enrichment and data pipeline builds",
+      "Lead enrichment and data pipeline builds",
       "Advanced lead routing and assignment logic",
       "Outbound process and sequence automation",
       "Ongoing optimization and monitoring",

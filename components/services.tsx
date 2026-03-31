@@ -20,7 +20,7 @@ const services = [
   {
     title: "Data & Enrichment",
     description:
-      "Clay workflows, lead routing, data normalization, and warehouse integrations so the right leads reach the right people.",
+      "Enrichment workflows, lead routing, data normalization, and warehouse integrations so the right leads reach the right people.",
     icon: Database,
   },
   {

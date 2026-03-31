@@ -37,7 +37,7 @@ const services = [
     description:
       "Clean, enrich, and route your data so the right leads get to the right people with the right context.",
     items: [
-      "Clay enrichment workflows",
+      "Lead enrichment workflows",
       "Lead routing and assignment logic",
       "Data normalization and hygiene",
       "Snowflake and warehouse integrations",
