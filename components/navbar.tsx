@@ -32,8 +32,9 @@ export default function Navbar() {
       </Link>
 
       <div className="hidden md:flex items-center space-x-8">
-        <NavLink href="/agent">Agent</NavLink>
+        <NavLink href="/services">Services</NavLink>
         <NavLink href="/subscriptions">Subscriptions</NavLink>
+        <NavLink href="/blog">Blog</NavLink>
       </div>
 
       <div className="hidden md:flex items-center space-x-4">
@@ -50,11 +51,14 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-black/90 border-white/10">
           <nav className="flex flex-col space-y-4 mt-8">
-            <NavLink href="/agent" onClick={toggleMenu}>
-              Agent
+            <NavLink href="/services" onClick={toggleMenu}>
+              Services
             </NavLink>
             <NavLink href="/subscriptions" onClick={toggleMenu}>
               Subscriptions
+            </NavLink>
+            <NavLink href="/blog" onClick={toggleMenu}>
+              Blog
             </NavLink>
             <Button className="bg-[#8A7FFF] hover:bg-[#7A6FEF] text-white w-full" asChild>
               <Link href="/contact" onClick={toggleMenu}>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SparklesCore } from "@/components/sparkles";
 import Navbar from "@/components/navbar";
 import { promises as fs } from "fs";
 import path from "path";
@@ -33,24 +32,17 @@ async function getSortedPostsData(): Promise<PostMetadata[]> {
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+export const metadata = {
+  title: "Blog - Moptimize",
+  description: "Insights on marketing operations, GTM engineering, and AI-powered automation.",
+}
+
 export default async function BlogPage() {
   const allPostsData = await getSortedPostsData();
 
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden text-white">
-      <div className="absolute inset-0 z-0">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#8A7FFF"
-        />
-      </div>
-      <div className="relative z-10">
-        <Navbar />
+    <main className="min-h-screen">
+      <Navbar />
         <section className="py-10">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl font-bold text-center text-white mb-8">Blog</h1>
@@ -71,7 +63,6 @@ export default async function BlogPage() {
             </div>
           </div>
         </section>
-      </div>
     </main>
   );
 }
