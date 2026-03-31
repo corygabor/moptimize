@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Bot, ArrowRightLeft, Database, Workflow } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -57,6 +58,19 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="text-center mt-10"
+        >
+          <Link
+            href="/services"
+            className="text-[#8A7FFF] hover:text-[#B4ACFF] transition-colors text-sm font-medium"
+          >
+            View all services →
+          </Link>
+        </motion.div>
       </div>
     </section>
   )

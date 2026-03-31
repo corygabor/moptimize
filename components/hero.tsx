@@ -15,7 +15,7 @@ export default function Hero() {
             className="mb-4"
           >
             <span className="inline-block bg-[#8A7FFF] text-white text-sm font-medium py-1 px-3 rounded-full backdrop-blur-sm">
-              AI-Powered GTM Engineering
+              Marketing Operations + AI
             </span>
           </motion.div>
 
@@ -25,8 +25,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-  <span className="block">GTM Systems,</span>
-  <span className="block text-[#A5B4FC]">Optimized for Growth</span>
+  <span className="block">We Build AI Agents</span>
+  <span className="block text-[#A5B4FC]">for MOps Teams</span>
 </h1>
           </motion.div>
 
@@ -36,8 +36,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-gray-300 text-xl mb-8 max-w-2xl mx-auto"
           >
-            We streamline your GTM stack, automate workflows, and apply AI where it drives the most impact. The result
-            is faster execution, cleaner operations, and smarter growth.
+            From list imports and lead routing to outbound sequences and campaign ops — we build agents and automations that replace the manual work your team does every day.
           </motion.p>
 
           <motion.div
