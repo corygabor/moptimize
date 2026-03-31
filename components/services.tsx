@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const services = [
   {
-    title: "AI Agents for MOps",
+    title: "AI Agents for MOPs",
     description:
       "Custom AI agents that automate list imports, lead research, outbound sequences, and campaign ops — built for your stack.",
     icon: Bot,

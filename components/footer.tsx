@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/services" className="text-gray-400 hover:text-[#8A7FFF] transition-colors">
-                  AI Agents for MOps
+                  AI Agents for MOPs
                 </Link>
               </li>
               <li>

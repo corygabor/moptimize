@@ -5,7 +5,7 @@ import { Bot, ArrowRightLeft, Database, Workflow } from "lucide-react"
 
 const services = [
   {
-    title: "AI Agents for MOps",
+    title: "AI Agents for MOPs",
     icon: Bot,
     description:
       "Custom AI agents that handle the repetitive work your team does every day — built to fit your specific stack and processes.",
