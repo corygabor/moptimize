@@ -7,7 +7,7 @@ import Link from "next/link"
 
 const plans = [
   {
-    name: "Foundation",
+    name: "Build",
     price: "$7,500",
     hours: "~40 hrs/month",
     tagline: "Get your stack in order — audits, migrations, and core infrastructure.",
@@ -21,12 +21,12 @@ const plans = [
     recommended: false,
   },
   {
-    name: "Automation",
+    name: "Scale",
     price: "$12,500",
     hours: "~60 hrs/month",
     tagline: "Enrichment pipelines, advanced routing, and workflow automation.",
     features: [
-      "Everything in Foundation",
+      "Everything in Build",
       "Lead enrichment and data pipeline builds",
       "Advanced lead routing and assignment logic",
       "Outbound process and sequence automation",
@@ -35,12 +35,12 @@ const plans = [
     recommended: true,
   },
   {
-    name: "AI-First",
+    name: "Agent",
     price: "$20,000",
     hours: "~80 hrs/month",
     tagline: "Custom AI agents and internal tools built for your team's workflows.",
     features: [
-      "Everything in Automation",
+      "Everything in Scale",
       "Slack-based campaign ops agents",
       "AI-powered list import and validation pipelines",
       "Lead research and auto-outbound agents",
